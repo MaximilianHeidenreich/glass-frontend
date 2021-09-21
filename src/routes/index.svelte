@@ -201,10 +201,10 @@
         margin: 0 auto;
     }
     #search h1 {
-        @apply text-8xl font-extrabold mb-6;
+        @apply text-5xl md:text-8xl font-extrabold mb-6;
     }
     #search h2 {
-        @apply text-3xl mb-8 text-gray-500;
+        @apply text-xl md:text-3xl mb-8 text-gray-500;
     }
     #search form {
         @apply w-full;

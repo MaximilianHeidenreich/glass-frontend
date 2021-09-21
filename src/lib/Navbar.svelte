@@ -12,7 +12,7 @@
         <a href="/" class="noline">
             <svg class="w-12 h-12" xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="#874efe" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,32a96,96,0,0,1,0,192" opacity="0.2"></path><circle cx="128" cy="128" r="96" fill="none" stroke="#874efe" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></circle><line x1="128" y1="32" x2="128" y2="224" fill="none" stroke="#874efe" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
         </a>
-        <div class="flex items-center">
+        <div class="nav-content">
             <div id="links">
                 <div class="flex items-center gap-2">
                     <a href="">Status</a><div class="w-2 h-2 rounded-full" class:bg-green-400={isStatusGood()} class:bg-red-400={!isStatusGood()}></div>
@@ -34,6 +34,9 @@
     }
     nav .content {
         @apply flex items-center justify-between py-4;
+    }
+    nav .nav-content {
+        @apply flex items-center;
     }
     nav #links {
         @apply mr-12 flex items-center gap-10;

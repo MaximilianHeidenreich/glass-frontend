@@ -40,13 +40,19 @@
         @apply mb-6;
     }
     footer .links {
-        @apply w-full flex gap-48 justify-between items-center;
+        @apply w-full flex flex-col md:flex-row gap-16 md:gap-48 justify-between items-center;
     }
     footer .links .left {
-        @apply w-full flex justify-between;
+        @apply w-full flex flex-wrap gap-16 justify-between;
+    }
+    footer .links .left ul {
+        
+    }
+    footer .links .left ul :first-child {
+        @apply mb-1;
     }
     footer .links .right {
-        @apply flex-col;
+        @apply flex-col text-center;
         min-width: fit-content;
     }
 </style>
